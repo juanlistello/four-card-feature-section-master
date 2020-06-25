@@ -89,14 +89,37 @@ body, html, h1, h2, h3, h4, p {
 }
 /* animation */
 .main img {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .main img:hover {
     transform: scale(1.2);
 }
+/* tablets */
+@media (min-width: 660px) {
+    .main {
+        max-width: 672px;
+         margin: 0 auto;
+        }
+    .header h1, .header h2 {
+        font-size: 2.2rem;
+    }
+    .header p {
+        margin-top: 0.9rem;
+
+        font-size: 1.1rem;
+    }
+    .header {
+        margin-top: 2rem;
+    }
+    .main {
+        margin-top: 1.5rem;
+    }
+         
+        
+        }
 
 
-
+/* desktop */
 @media (min-width: 960px) {
     .main {
         margin: 0 auto;
@@ -104,7 +127,7 @@ body, html, h1, h2, h3, h4, p {
     }
     .box4 {
         order: 3;
-        
+   
     }
     .box3 {
         order: 4;
